@@ -1,0 +1,11 @@
+.nav {
+  background-color: yellowgreen;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+  text-decoration: none !important;
+}

@@ -1,7 +1,7 @@
 function App() {
   return (
     <div>
-      <h1>WorldWise App</h1>
+      <h3>WorldWise App</h3>
     </div>
   );
 }

@@ -7,15 +7,17 @@ import PageNotFound from "./pages/PageNotFound";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route index element={<Homepage />} />
-        <Route path="pricing" element={<Pricing />} />
-        <Route path="product" element={<Product />} />
-        <Route path="*" element={<PageNotFound />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route index element={<Homepage />} />
+          <Route path="pricing" element={<Pricing />} />
+          <Route path="product" element={<Product />} />
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 

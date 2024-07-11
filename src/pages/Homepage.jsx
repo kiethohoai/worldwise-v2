@@ -1,7 +1,12 @@
+import { Link } from "react-router-dom";
+import PageNav from "../components/PageNav";
+
 function Homepage() {
   return (
     <div>
-      <h3>Worldwise App</h3>
+      <PageNav />
+      <h1>Worldwise App</h1>
+      <Link to="/pricing">Pricing</Link>
     </div>
   );
 }

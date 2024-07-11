@@ -1,5 +1,5 @@
-import { useParams } from "react-router-dom";
-import styles from "./City.module.css";
+import { useParams, useSearchParams } from "react-router-dom";
+// import styles from "./City.module.css";
 
 const formatDate = (date) =>
   new Intl.DateTimeFormat("en", {
@@ -18,10 +18,21 @@ function City() {
     notes: "My favorite city so far!",
   };
 
-  const { cityName, emoji, date, notes } = currentCity;
+  // const { cityName, emoji, date, notes } = currentCity;
 
-  const tempId = useParams();
-  return <h1>ID = {tempId.id}</h1>;
+  const { id } = useParams();
+  const [searchParams] = useSearchParams();
+  const lat = searchParams.get("lat");
+  const lng = searchParams.get("lng");
+
+  return (
+    <>
+      <h1>ID = {id}</h1>{" "}
+      <p>
+        POSITION: {lat} : {lng}
+      </p>
+    </>
+  );
 
   // return (
   //   <div className={styles.city}>

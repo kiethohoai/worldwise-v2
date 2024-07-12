@@ -20,3 +20,4 @@
 009 Consuming the CitiesContext
 010 Finishing the City View
 011 Including a Map With the Leaflet Library
+012 Displaying City Markers on Map
